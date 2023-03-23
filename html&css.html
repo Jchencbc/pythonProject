@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MyNet</title>
+    <link rel="stylesheet" href="mycss.css">  <!-- 从css引入样式 -->
+    <style>
+        #a{
+            color: yellow;
+        }       <!--id选择器 -->
+        span{
+            color: pink;
+        }       <!--标签选择器 -->
+        .jay{
+            color: blue;
+        }       <!--类选择器 -->
+        li，div{
+            color: green;
+        }       <!--并列选择器 -->
+        ul li{
+            color: brown;
+        }       <!--全部后代选择器 -->
+        ul > li{
+            color: brown;
+        }       <!--儿子后代选择器 -->
+        ul + li{
+            color: brown;
+        }       <!--相邻 -->
+        q[target='_blank']{
+            color: brown;
+        }  <!--属性选择器 -->
+    </style>  <!-- head.style写样式 -->
+</head>
+<body>
+<!--    <div style="width: 100px;height: 100px;border: 1px solid red;">苹果</div>  &lt;!&ndash; style样式 &ndash;&gt;-->
+<!--    <span>橙子</span>-->
+    <ul>
+        <li id="a">A</li>
+        <li class="jay">B</li>
+        <li>C</li>
+        <li>D</li>
+        <div class="jay">橙子</div>
+    </ul>
+    <a href="#" target="_blank">11</a>
+</body>
+</html>
